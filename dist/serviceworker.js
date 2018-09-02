@@ -9,7 +9,9 @@ var filesToCache = [
     '/serviceworker.js',
     '/site.css',
     '/icon.png',
-    '/off-line.png'
+    '/off-line.png',
+    'https://fonts.googleapis.com/css?family=Roboto',
+    'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
 ];
 
 self.addEventListener('install', function(e) {
