@@ -122,14 +122,6 @@ input[type="text"] {
     flex-wrap: wrap;
 }
 
-.text-center {
-    text-align: center;
-}
-
-.text-right {
-    text-align: right;
-}
-
 .item-product {
     margin: 10px;
     width: 300px;
@@ -183,6 +175,14 @@ input[type="text"] {
         background-color: #005792;
         color: #fff;
     }
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
 
 .space-div {
     margin: 20px;
