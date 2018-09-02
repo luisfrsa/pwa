@@ -1,8 +1,6 @@
 var apiUrl = "https://spakimail.azurewebsites.net/api/";
 var ajaxRequest = new XMLHttpRequest();
 
-
-
 function isNullOrEmpty(value) {
     return typeof value === "undefined" || value == null || value == "" || (typeof value === "string" && value.trim() == "") || (Array.isArray(value) && value.length < 1);
 }
@@ -17,8 +15,8 @@ function ajax(verb, url, data, callback) {
 
     ajaxRequest.onreadystatechange = function() {
         if (ajaxRequest.readyState == XMLHttpRequest.DONE) 
-            if(ajaxRequest.status == 0)
-                document.getElementById("container").innerHTML = getOfflineContent(); // -> off-line
+            if(ajaxRequest.status == 0) // -> off-line
+                document.getElementById("container").innerHTML = getOfflineContent(); 
             else
                 callback(ajaxRequest.status, ajaxRequest.responseText);
     };
